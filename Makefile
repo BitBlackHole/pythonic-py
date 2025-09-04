@@ -4,6 +4,7 @@ install:
 
 test:
 	python -m pytest -vv --cov=hello test_hello.py
+	python -m pytest --nbval notebook.ipynb
 
 format:
 	black *.py
